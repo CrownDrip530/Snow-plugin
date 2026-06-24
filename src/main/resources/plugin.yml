@@ -1,0 +1,21 @@
+name: SnowPlugin
+version: '${project.version}'
+main: cc.crowndrip.snowplugin.SnowPlugin
+api-version: '1.21'
+description: Custom snow zone plugin for CrownDrip Anarchy SMP
+authors: [CrownDrip530]
+
+commands:
+  snow:
+    description: Toggle a snow zone at your location
+    usage: /snow <radius>
+    permission: snowplugin.use
+  snowclear:
+    description: Remove the snow zone you are standing in
+    usage: /snowclear
+    permission: snowplugin.use
+
+permissions:
+  snowplugin.use:
+    description: Allows use of /snow and /snowclear
+    default: op
